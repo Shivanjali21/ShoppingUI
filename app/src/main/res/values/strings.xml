@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Shopping App</string>
+    <string name="login_tag">Login</string>
+    <string name="email_hint">Email
+        <!-- <font color="#FF0000">*</font>-->
+    </string>
+
+    <string name="password_hint">
+<!--        <font color="#F28B8B">Password</font>-->
+        Password
+    </string>
+    <string name="forgot_password_tag">Forgot Password?</string>
+    <string name="no_account_sign"><font color="#8C8585">Don\'t have account?</font> <font color="#F28B8B">Sign Up</font></string>
+    <string name="no_account_login"><font color="#8C8585">Don\'t have account?</font> <font color="#F28B8B">Login</font></string>
+    <string name="or">OR</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="signup_tag">Signup</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="success">Success</string>
+    <string name="reg_success_msg">Congratulations, you have\ncompleted your registration!</string>
+    <string name="reg_success_done">Done</string>
+    <string name="btm_home">Home</string>
+    <string name="btm_wishlist">Wishlist</string>
+    <string name="btm_cart">Cart</string>
+    <string name="btm_profile">Profile</string>
+    <string name="search_here">Search</string>
+    <string name="categories_tag">Categories</string>
+    <string name="see_more">See More</string>
+    <string name="flash_sal_tag">Flash Sale</string>
+    <string name="rupee_symbol">u20A8</string>
+    <string name="see_your_favourite_none">See Your Favourite\none</string>
+    <string name="notifications">Notifications</string>
+    <string name="items_tag">Items</string>
+    <string name="price_tag">Price</string>
+    <string name="phone_number_tag">Phone Number</string>
+    <string name="address_tag">Address</string>
+    <string name="log_out_tag">Log Out</string>
+    <string name="edit_profile_tag">Edit Profile</string>
+    <string name="sav_tag">Save</string>
+    <string name="do_you_really_want_to_logout">Do you Really Want To Logout?</string>
+    <string name="cancel_tag">Cancel</string>
+    <string name="shopping_cart_tag">Shopping Cart</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="qty_tag">QTY</string>
+    <string name="total_tag">Total</string>
+    <string name="size_tag">Size</string>
+    <string name="color_tag">Color</string>
+    <string name="specification_tag">Specification</string>
+    <string name="product_description">Dress\nMaterial : Linen\nMaterial Composition : 100% Linen\nPlease bear in mind that the photo may be slightly different from the actual item in terms of color due to lighting conditions or the display used to view</string>
+    <string name="buy_now_tag">Buy Now</string>
+    <string name="add_to_cart_tag">Add to Cart</string>
+    <string name="add_to_wishlist_tag">Add to Wishlist</string>
+    <string name="checkout_tag">Checkout</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sub_total">Sub Total Rs 2000</string>
+    <string name="shipping_tag">Shipping</string>
+    <string name="return_to_cart_tag">Return to Cart</string>
+    <string name="subtotal_price">Rs 2000</string>
+    <string name="shipping_charge">Free</string>
+    <string name="total">Total</string>
+    <string name="total_price">Rs 3000</string>
+    <string name="contact_info_tag">Contact Information</string>
+    <string name="shipping_address_tag">Shipping Address</string>
+    <string name="country_hint">Country</string>
+    <string name="city_tag">City</string>
+    <string name="postal_code_tag">Postal Code</string>
+    <string name="save_info_tag">Save Info for Next Time</string>
+    <string name="change_tag">Change</string>
+    <string name="ship_to_tag">Ship To</string>
+    <string name="shipping_method">Shipping Method</string>
+    <string name="cod_msg">Cash on Delivery over Rs 4500\n(Delivery Fee, COD Processing Fee).</string>
+    <string name="continue_shipping_tag">Continue Shipping</string>
+    <string name="standard_free_delivery_tag">Standard Free Delivery up to Rs 4500</string>
+    <string name="payment_tag">Payment</string>
+    <string name="return_to_shipping_tag">Return to Shipping</string>
+    <string name="transaction_info"><![CDATA[All Transaction are secure & encrypted]]></string>
+    <string name="bank_name">Sampath Bank IPG</string>
+    <string name="pay_info">After clicking “Pay now”, you will be redirected to Sampath Bank IPG to complete your purchase securely.</string>
+    <string name="cod_tag">Cash On Delivery (COD)</string>
+    <string name="same_shipping_address_msg">Same as Shipping Address</string>
+    <string name="different_billing_address">Use a different Billing Address</string>
+    <string name="pay_now_tag">Pay Now</string>
+    <string name="successful_purchase_tag">Successful Purchase</string>
+    <string name="start_shopping_tag">Start Shopping</string>
+</resources>

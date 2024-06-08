@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeFragRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.btmnavi.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSearchBar"
+            style="@style/Theme.TextColorGrey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/border_curve"
+            android:drawableStart="@drawable/search_icon"
+            android:drawablePadding="6dp"
+            android:hint="@string/search_here"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/ivNotification"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etSearchBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etSearchBar"
+            android:src="@drawable/notification_icon"
+            app:tint="@color/colorHint"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvCategoriesTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/categories_tag"
+            android:padding="6dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="16dp"
+            style="@style/Theme.HeadingMedium"
+            app:layout_constraintTop_toBottomOf="@id/etSearchBar"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvCateMoreTag"
+            style="@style/Theme.TextColorPink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:padding="6dp"
+            android:text="@string/see_more"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvCategoriesTag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvCategoriesTag" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/mtvCategoriesTag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            tools:listitem="@layout/rv_item_categories"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@id/rvCategories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvFlashSaleTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/flash_sal_tag"
+            android:padding="6dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="16dp"
+            style="@style/Theme.HeadingMedium"
+            app:layout_constraintTop_toBottomOf="@id/rvCarousel"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvFSMoreTag"
+            style="@style/Theme.TextColorPink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:padding="6dp"
+            android:text="@string/see_more"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvFlashSaleTag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvFlashSaleTag" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFLashSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintTop_toBottomOf="@id/mtvFlashSaleTag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/rv_item_flashsale"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

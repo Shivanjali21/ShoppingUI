@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationGraphHome"
+        android:icon="@drawable/btm_home"
+        android:title="@string/btm_home"/>
+
+    <item
+        android:id="@+id/navigationGraphWishList"
+        android:icon="@drawable/btm_heart"
+        android:title="@string/btm_wishlist"/>
+
+    <item
+        android:id="@+id/navigationGraphCart"
+        android:icon="@drawable/btm_cart"
+        android:title="@string/btm_cart"/>
+
+    <item
+        android:id="@+id/navigationGraphProfile"
+        android:icon="@drawable/btm_user"
+        android:title="@string/btm_profile"/>
+</menu>

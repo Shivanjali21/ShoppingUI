@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clCategoriesRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="6dp">
+
+     <com.google.android.material.card.MaterialCardView
+         android:id="@+id/mcvImg"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         app:cardCornerRadius="60dp"
+         app:cardElevation="6dp"
+         app:cardBackgroundColor="@color/colorWhite"
+         app:strokeWidth="1dp"
+         app:strokeColor="@color/colorBlack"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent">
+
+         <androidx.appcompat.widget.AppCompatImageView
+             android:id="@+id/ivCategoriesImg"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_gravity="center"
+             android:src="@drawable/dress_icon"/>
+
+     </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvCategoriesName"
+        style="@style/Theme.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mcvImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginVertical="40dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/colorWhite">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/profile_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLogoutTag"
+            style="@style/Theme.TextColorPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out_tag"
+            android:padding="6dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintTop_toBottomOf="@id/ivUserProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLMsgTag"
+            style="@style/Theme.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_you_really_want_to_logout"
+            android:padding="4dp"
+            android:layout_marginVertical="4dp"
+            app:layout_constraintTop_toBottomOf="@id/mtvLogoutTag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mBtnLogout"
+            style="@style/Theme.Button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/border_curve"
+            android:backgroundTint="@color/colorTheme"
+            android:text="@string/log_out_tag"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvLMsgTag"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mBtnCancel"
+            style="@style/Theme.TextColorPink"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/border_curve"
+            android:text="@string/cancel_tag"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvLMsgTag"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

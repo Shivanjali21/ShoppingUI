@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShoppingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Theme.ShoppingApp" parent="Base.Theme.ShoppingApp"/>
+
+    <style name="Theme.HeadingLarge" parent="TextAppearance.Material3.HeadlineLarge">
+       <item name="fontFamily">@font/montserratsb</item>
+       <item name="android:includeFontPadding">false</item>
+       <item name="android:textSize">30sp</item>
+       <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Theme.HeadingMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Theme.HeadingMedium2" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorLBlack</item>
+    </style>
+
+    <style name="Theme.HeadingSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorLBlack</item>
+    </style>
+
+    <style name="Theme.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/montserratmedium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Theme.CaptionWhite" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Theme.TextColorPink" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorTheme</item>
+    </style>
+
+    <style name="Theme.TextColorPinkSmall" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorTheme</item>
+    </style>
+
+    <style name="Theme.TextColorGrey" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorHint</item>
+    </style>
+
+    <style name="Theme.TextColorGreySmall" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorHint</item>
+    </style>
+
+    <style name="Theme.Button" parent="ThemeOverlay.Material3.Button">
+        <item name="fontFamily">@font/montserratsb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Theme.CustomMaterialAlert" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="cardElevation">6dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="android:windowBackground">@drawable/round_corner</item>
+        <item name="backgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorYellow</item>
+    </style>
+
+</resources>
